@@ -8,10 +8,10 @@ The platforms in question are OS X, Linux, and Windows. The toolbar can also be 
 
 1. Get the addon into a state where it actually tests what we're trying to do.
 
-  * Generate a 16x16 image with a 1-pixel wide border at the edges.
-  * Do the same for a 24x24 image.
-  * Update the `chrome.manifest` and CSS files so that all six toolbar-mode/platform combinations will display correctly. That is, each combination should display one of the icons at its native resolution, with no cropping or distortion.
-  * Upload the addon to [bug 616472][] for feedback.
+    * Generate a 16x16 image with a 1-pixel wide border at the edges.
+    * Do the same for a 24x24 image.
+    * Update the `chrome.manifest` and CSS files so that all six toolbar-mode/platform combinations will display correctly. That is, each combination should display one of the icons at its native resolution, with no cropping or distortion.
+    * Upload the addon to [bug 616472][] for feedback.
 
 2. Research automated testing requirements for this by looking at the [Firefox Review Requirements][] and talking to necessary people.
 
@@ -19,8 +19,8 @@ The platforms in question are OS X, Linux, and Windows. The toolbar can also be 
 
 4. Hack Firefox to make the tests pass.
 
-  * We're hoping that OS X already works. In [comment 7][] Jorge mentions that 16x16 icons are actually stretched to 20x20, but later comments in the bug suggest that this was fixed. Also, we think that large and small toolbar icons on OS X look the exact same, but we should test this.
-  * The other platforms/modes to try, in order, are **Windows small** (16x16), **Linux small** (16x16), **Linux large** (24x24), **Windows large** (which depends on incoming changes to be made by  [Stephen Horlander][]).
+    * We're hoping that OS X already works. In [comment 7][] Jorge mentions that 16x16 icons are actually stretched to 20x20, but later comments in the bug suggest that this was fixed. Also, we think that large and small toolbar icons on OS X look the exact same, but we should test this.
+    * The other platforms/modes to try, in order, are **Windows small** (16x16), **Linux small** (16x16), **Linux large** (24x24), **Windows large** (which depends on incoming changes to be made by  [Stephen Horlander][]).
 
 5. Make screenshots and upload them to the bug.
 
